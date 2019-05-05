@@ -1,0 +1,18 @@
+//构建用户表
+CREATE TABLE `user` (
+   `id` int(11) NOT NULL AUTO_INCREMENT,
+   `userName` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+   `password` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+   PRIMARY KEY (`id`)
+ ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_bin
+ //构建留言表
+ CREATE TABLE `messa` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `time` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+    `recentMobi` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+    `mess` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+    `userId` int(11) DEFAULT NULL,
+    `dir` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `id_UNIQUE` (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_bin
